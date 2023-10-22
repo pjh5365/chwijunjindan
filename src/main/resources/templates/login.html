@@ -1,0 +1,17 @@
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>로그인</title>
+</head>
+<body>
+<!--    해당 주소로 이동하면 스프링 시큐리티가 가로채서 로그인 해줌 -->
+    <form name="login" method="post" action="/login">
+        <h1 style="text-align: center">로그인</h1>
+<!--        name 은 스프링 시큐리티가 알아볼 수 있도록 username, password 로 설정해야한다. -->
+        <input type="text" placeholder="아이디" class="in" name="username" required>
+        <input type="password" placeholder="비밀번호" class="in" name="password" required>
+        <input type="submit" id="btn" value="로그인"><br>
+        <a href="/register">회원가입</a>
+    </form>
+</body>
+</html>
